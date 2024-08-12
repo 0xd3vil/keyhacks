@@ -57,6 +57,7 @@ KeyHacks shows methods to validate different API keys found on a Bug Bounty Prog
 - [Iterable API Key](#Iterable-API-Key)
 - [JumpCloud API Key](#JumpCloud-API-Key)
 - [Keen.io API Key](#Keenio-API-Key)
+- [kaleyra Api key](#kaleyra-Api-key)
 - [LinkedIn OAUTH](#LinkedIn-OAUTH)
 - [Lokalise API Key](#Lokalise-API-Key)
 - [Loqate API Key](#Loqate-API-key)
@@ -793,6 +794,20 @@ The live key, on the other hand, can be used to extract/retrieve a lot of info. 
 Keep in mind that you will never be able to get the full credit card information since stripe only gives you like the last 4 digits.
 More info / complete docs: https://stripe.com/docs/api/authentication
 =======
+
+## [kaleyraApikey](https://developers.kaleyra.com/support/home)
+
+Connect two users on the call:
+
+```
+curl --location 'https://api-voice.kaleyra.com/v1/' \
+--header 'x-api-key: <API_KEY_HERE>' \
+--form 'method="dial.click2call"' \
+--form 'format="json"' \
+--form 'caller="CALLER_NO._HERE"' \
+--form 'receiver="RECEVER_No._Here"' \
+--form 'return="1"'
+```
 
 ## [Calendly API Key](https://developer.calendly.com/docs/)
 
